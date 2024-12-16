@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here]()
-- Solution URL: [Add solution URL here]()
+- Live Site URL: (https://github.com/uixcem/TestimonialsPage-Solution)
+- Solution URL: (https://testimonialpagesolution.netlify.app/)
 
 ## My Process
 
