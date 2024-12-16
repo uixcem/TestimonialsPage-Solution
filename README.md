@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL:[View] (https://testimonialpagesolution.netlify.app/)
+- Live Site URL:[View](https://testimonialpagesolution.netlify.app)
 - Solution URL: [View](https://github.com/uixcem/TestimonialsPage-Solution)
 
 ## My Process
