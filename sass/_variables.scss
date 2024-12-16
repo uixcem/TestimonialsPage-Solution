@@ -1,0 +1,26 @@
+//fonts, colors, etc.
+
+$font-family: "Barlow Semi Condensed", sans-serif;
+$font-weight-regular: 500;
+$font-weight-bold: 600;
+$font-size: 13px;
+$line-height: 1.5;
+
+$color-primary: hsl(263, 55%, 52%);
+$color-secondary: hsl(217, 19%, 35%);
+$color-tertiary: hsl(219, 29%, 14%);
+$color-white: hsl(0, 0%, 100%);
+$color-text-secondary: hsl(0deg 0% 74.17%);
+$color-light-gray: hsl(0, 0%, 81%);
+$color-light-grayish-blue: hsl(210, 46%, 95%);
+
+$spacing-xxs: 8px;
+$spacing-xs: 16px;
+$spacing-s: 24px;
+$spacing-m: 32px;
+$spacing-l: 48px;
+$spacing-xl: 64px;
+$spacing-xxl: 80px;
+
+$breakpoint-tablet: 375px;
+$breakpoint-desktop: 1440px;

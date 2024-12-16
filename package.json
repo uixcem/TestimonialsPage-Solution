@@ -1,0 +1,14 @@
+{
+  "name": "testimonialspage-solution",
+  "version": "1.0.0",
+  "description": "![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss:style.css -w"
+  },
+  "author": "uixcem",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.0"
+  }
+}

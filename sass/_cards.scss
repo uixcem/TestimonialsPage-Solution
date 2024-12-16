@@ -1,0 +1,113 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: $spacing-s;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ffffffe0;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    @include mobile {
+      font-size: 1.4rem;
+    }
+  }
+
+  p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: $color-text-secondary;
+    opacity: 0.4;
+    @include mobile {
+      font-size: 1rem;
+    }
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-xs;
+
+  @include mobile {
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    z-index: 2;
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+
+  .quote {
+    position: relative;
+    z-index: 1;
+  }
+
+  .quote::before {
+    content: "";
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    opacity: 0.6;
+    top: -105px;
+    left: 350px;
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+    @include mobile {
+      width: 8rem;
+      height: 8rem;
+      top: -45px;
+      left: 175px;
+    }
+    @include tablet {
+      width: 12rem;
+      height: 12rem;
+      top: -75px;
+      left: 10rem;
+    }
+  }
+
+  p {
+    font-size: 1.8rem;
+    @include mobile {
+      font-size: 1.5rem;
+    }
+    font-weight: 400;
+    opacity: 0.7;
+  }
+}
+
+.purple {
+  @include card($color: $color-primary, $border-radius: 10px, $padding: 40px);
+}
+
+.black {
+  @include card($color: $color-tertiary, $border-radius: 10px, $padding: 40px);
+}
+
+.gray {
+  @include card($color: $color-secondary, $border-radius: 10px, $padding: 40px);
+}
+
+.white-long {
+  @include card($color: $color-white, $border-radius: 10px, $padding: 40px);
+}
+
+.white-short {
+  @include card($color: $color-white, $border-radius: 10px, $padding: 40px);
+}

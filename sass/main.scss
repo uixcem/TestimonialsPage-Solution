@@ -1,0 +1,75 @@
+@use "variables" as *;
+@use "mixins" as *;
+@use "cards" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  background-color: $color-light-grayish-blue;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: $spacing-xxl;
+  @include mobile {
+    padding: $spacing-m;
+  }
+}
+
+main {
+  display: grid;
+  gap: $spacing-m;
+  width: 100%;
+  max-width: 1440px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.purple {
+  grid-area: 1/1/2/3;
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.gray {
+  grid-area: 1/3/2/4;
+  background-color: $color-secondary;
+  color: $color-white;
+}
+
+.white-long {
+  grid-area: 1/4/3/5;
+  background-color: $color-white;
+  color: $color-tertiary;
+}
+
+.white-short {
+  grid-area: 2/1/3/2;
+  background-color: $color-white;
+  color: $color-tertiary;
+}
+
+.black {
+  grid-area: 2/2/3/4;
+  background-color: $color-tertiary;
+  color: $color-white;
+}
